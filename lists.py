@@ -2,6 +2,8 @@
 # Lists
 #######
 
+# The following content is based on Erc Matthe's book, 'Python crash course' from 2016.
+
 # 'A list is a collection of items in a particular order' (p.37).
 # Lists are indicated by bracets ([]).
 
@@ -44,3 +46,22 @@ print(numbers)
 # Reverse sorting.
 numbers.sort(reverse=True)
 print(numbers)
+
+# Sort list non temporary.
+
+# The previous commands change the order of the list.
+# To avoid this issue, sorted() can be used.
+
+numbers = ['zero', 'one', 'two', 'N']
+
+print(
+	'Sorted: ' +str(sorted(numbers))
+	)
+
+print(
+	'Sorted reverse: '
+	+str(sorted(numbers, reverse=True)))
+
+# Length of a list
+print(len(numbers))
+
