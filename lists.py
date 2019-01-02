@@ -16,6 +16,9 @@ print(numbers[1])
 # The last item can always be accessed via -1
 print(numbers[-1])
 
+# Slicing a list
+print(numbers[0:3])
+
 # Elements can be changed.
 numbers[3] = 'last_item'
 print(numbers)
@@ -48,7 +51,6 @@ numbers.sort(reverse=True)
 print(numbers)
 
 # Sort list non temporary.
-
 # The previous commands change the order of the list.
 # To avoid this issue, sorted() can be used.
 
@@ -65,3 +67,24 @@ print(
 # Length of a list
 print(len(numbers))
 
+# Looping though lists
+
+# Print all objects in list 'numbers' 
+for i in numbers:
+	print(i)
+
+# Create numerical list
+# Have in mind the 'off-by-one' behavior.
+# The list stops before 5.
+list_a = []
+for i in range(1,5):
+	list_a.append(i)
+print(list_a)
+
+# Simpler solution.
+list_b = list(range(1,5))
+print(list_b) 
+
+# Copy a list
+numbers_copy = numbers
+print(numbers_copy)
