@@ -1,5 +1,5 @@
 #######
-# Lists
+# Lists K
 #######
 
 # 'A list is a collection of items in a particular order' (p.37).
@@ -34,9 +34,15 @@ print(numbers)
 numbers.remove('last_item+1')
 print(numbers)
 
+
+### Sorting ### 
+
 # Sorting a list.
 numbers.sort()
 print(numbers)
 
+# Reverse sorting.
 numbers.sort(reverse=True)
 print(numbers)
+
+# simple test to see what happens
